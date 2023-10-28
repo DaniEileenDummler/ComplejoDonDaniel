@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Complejo Don daniel</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	  <!-- Enlaza el archivo CSS de Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	  <!-- Enlaza el archivo JavaScript de Bootstrap (opcional) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar-menu">
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fa-solid fa-bars"></i>
+			</label>
+			<label class="logo">Complejo Don Daniel</label>
+			<ul class="nav-options">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="staff.html">Nosotros</a></li>
+				<li><a href="reservas.html">Reservas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<div class="Reserva">
+			<section class="clase1">
+				<fieldset id="SeccionReservas">
+			<form action="servidorFuturo" class="datosreserva">
+				<h2 id="tituloForm">Formulario de Reserva</h2>
+				<label class="labels" for="name">Nombre del titular de la Reserva</label>
+				<input type="text" id="name" maxlength="60" required="true" placeholder="Nombre y Apellido" class="form-contro2">
+				<br><br>
+				<label class="labels" for="name">DNI o Pasaporte</label>
+				<input type="text" id="dni" maxlength="10" required="true" placeholder="Documento" class="form-contro2">
+				<br><br>
+				<label class="labels" for="name">Email</label>
+				<input type="email" id="email" maxlength="60" required="true" placeholder="Email" class="form-contro2">
+				<br><br>
+				<label class="labels" for="name">Teléfono</label>
+				<input type="phone" id="phone" maxlength="15" required="true" placeholder="Telefono" class="form-contro2">
+				<br><br>
+				<label class="labels" for="">Seleccione el tipo de reserva:            </label>
+                <input type="checkbox" class="hospedaje">Motorhomes
+                <input type="checkbox" class="hospedaje">Casa Rodante
+                <input type="checkbox" class="hospedaje">Dormis
+                <input type="checkbox" class="hospedaje">Cabañas
+                <br></br>
+                 <label for="Personas">Mayores</label>
+                      <select id="mayores" class="cajas">
+                          <option value="1" label="1"></option>
+                          <option value="2" label="2"></option>
+                          <option value="3" label="3"></option>
+                          <option value="4" label="4"></option>
+                          <option value="5" label="5"></option>
+                      </select>
+                <label for="Personas">Menores</label>
+                      <select id="menores" class="cajas">
+                          <option value="1" label="1"></option>
+                          <option value="2" label="2"></option>
+                          <option value="3" label="3"></option>
+                          <option value="4" label="4"></option>
+                          <option value="5" label="5"></option>
+                      </select></br></br>
+            <label class="labels" for="birth">Fecha de ingreso</label>
+        	<input type="date" name="" id="ingreso">
+        	<label class="labels" for="birth">Fecha de egreso</label>
+        	<input type="date" name="" id="egreso">
+        	<br><br>
+        	<input type="submit" value="Reservar" id="btnreservar">
+	        </form>
+	    </fieldset>
+			</section>
+		<section class="clase2">
+			<fieldset id="PreciosCategoria">
+				<h2>Precios</h2>
+			<div class="motorhomes">
+				<h3>Precio por día de motorhomes y casa Rodantes:</h3>
+				<p>$2222,22</p>
+			</div>
+			<div class="Dormis">
+				<h3>Precio por día de Dormis:</h3>
+				<p>$2222,22</p>
+			</div>
+			<div class="Cabañas">
+				<h3>Precio por día de cabañas:</h3>
+				<p>$2222,22</p>
+			</div>
+			<div class="estadia">
+				<h3>Precio para pasar el día:</h3>
+				<p>$2222,22</p>
+			</div>
+			<h5>Recordá que para pasar el día el horario de ingreso es de 9:00 a.m y de egreso 20:00 p.m. No hace falta hacer <br>reserva para este caso.Todas las estadías tienen libre acceso a la laguna,pileta, baños, parrillas y comedor.<br>Consultá por la opción de alquiler de parcela por temporada, e invitados!
+			</h5>
+			</fieldset>
+	    </section>
+		</nav>
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="social">
+				<label><a href="https://www.facebook.com/pages/Caba%C3%B1a-Don-Daniel-Roque-P%C3%A9rez/965774396835722" target="_blank"><i class="fa-brands fa-facebook"></i></a></label>
+				<label><a href="https://www.instagram.com/cabanadondaniel/" target=_blank><i class="fa-brands fa-square-instagram"></i></a></label>
+			</div>
+			<div class="copr">
+				<p>Daniela Dummler &copy; 2023 - Todos los derechos reservados</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/8c8e2d3687.js" crossorigin="anonymous"></script>
+</body>
+</html>

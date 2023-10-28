@@ -1,0 +1,483 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+nav{
+	position: relative;
+	z-index: 1;
+}
+.navbar-menu{
+	background:#000;
+	height: 50px;
+	width: 100%;
+	position:relative;
+}
+
+.logo{
+	position:absolute;
+	color:#FFF;
+	font-size:30px;
+	top:8px;
+	left:5%;
+}
+.navbar-menu ul{
+	float: right;
+	margin-right:20px;
+	list-style-type: none;
+}
+.nav-options li{
+	display: inline-block;
+	line-height: 50px;
+	margin:0 5px;
+}
+.nav-options li a{
+	color: white;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 5px 10px;
+	position:relative;
+	border-radius:3px;
+}
+a:focus, a:hover{
+	background-color:#089FEB;
+	transition:5s;
+}
+.checkbtn{
+	font-size: 25px;
+	float:right;
+	color:#FFFFFF;
+	line-height: 50px;
+	margin-right: 25px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+section{
+	width: 100%;
+}
+.banner{
+	height: 97vh;
+	position: relative;
+	background-color: #69B4C8;
+}
+.banner-text{
+	position: absolute;
+	color: white;
+	top: 37%;
+	text-align: left;
+	left: 20px;
+	right: 20px;
+	transform: translateX(0%) translateY(-45%);
+}
+.banner-content img{
+	width: 100%;
+}
+.banner-text a{
+	display: block;
+	color:#F5F2F2;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	padding: 7px;
+	margin-top:10px;
+	border: 3px solid #F5F2F2;
+}
+.banner-text a:hover{
+	background-color: #F5F2F2;
+	color:grey;
+}
+.about{
+	height: 97vh;
+	position: relative;
+	background-color: #302D2D;
+	color: #F3F2F2;
+}
+.about-content{
+	width: 100%;
+	hyphens: 100%;
+	padding: 30px 0;
+	text-align: center;
+}
+.about-content h2{
+	font-size: 45px;
+	text-transform: uppercase;
+}
+
+.about-content p, .about-content h2 {
+	padding: 10px 50px;
+}
+.about-img{
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 30px;
+
+}
+.about-imgx{
+	width: 33%;
+	float: left;
+}
+.img-job{
+	width: 280px;
+	height: 280px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 15px;
+
+}
+.staff{
+	height: 97vh;
+	position: relative;
+	background: url(../img/fondocafe.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #F5F2F2;
+}
+.staff-content{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.staff-content h2{
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.staff-content p, .staff-content h2{
+	padding: 10px 50px;
+}
+.staff-group{
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 30px;
+	padding: 0px 50px;
+}
+.info{
+	text-align: center;
+}
+.staff-card{
+	width: 33%;
+	float: left;
+}
+.img-perfil{
+	width: 200px;
+	height:200px;
+	border-radius: 50%;
+	border: 3px solid white;
+}
+.contacto{
+	height: 97vh;
+	position:relative;
+}
+.contacto-content{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	background: url(../img/llamas.jpeg);
+
+}
+.contacto-content h2{
+	font-size: 45px;
+	text-transform: uppercase;
+}
+.contacto-content p, .contacto-content h2{
+	padding: 10px 50px;
+}
+.contacto-group{
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 30px;
+	padding: 0px 50px;
+}
+.form-contact{
+	width: 50%;
+	float: left;
+}
+.contacto-img{
+	width: 50%;
+	float: left;
+}
+.contacto-img img{
+	width:85%;
+	display: block;
+	margin: auto;
+}
+.form-control{
+	width:85%;
+	padding:0.8rem;
+	margin: 0.6rem 1rem;
+	display: block;
+	font-size: 1rem;
+	outline: 0;
+	border-radius: 5px;
+	border: 1.5px solid #c7c7c7;
+	background: linear-gradient(white, transparent);
+}
+.send-btn{
+	display: block;
+	font-size: 1rem;
+	text-transform: uppercase;
+	background-color: #7b12ae;
+	color:#FFFFFF;
+	border: none;
+	padding: 0.7rem 1.5rem;
+	margin: 0.6rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+
+}
+footer{
+	position: relative;
+
+}
+.footer{
+	background: #000000;
+	height: 10vh;
+	color: #FFFFFF;
+}
+.social{
+	width: 50%;
+	float:left;
+	margin-top: 20px;
+	text-align: center;
+}
+.social label a{
+	color: #FFFFFF;
+}
+.social label i{
+	font-size: 25px;
+	padding: 0 10px;
+}
+.social label i:hover{
+	color: #C189BD;
+}
+.copr{
+	width: 50%;
+	float: left;
+	margin-top:20px;
+	text-align: left;
+}
+.precios{
+	display: inline-block;
+}
+.Reserva{
+		background: url(../img/campo1.jpeg);
+		justify-self: center;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 100%;
+}
+.clase1, .clase2{
+
+	justify-contet:center;
+	position: relative;
+	display: inline-grid;
+	padding-bottom: 5px;
+
+}
+.datosreserva{
+	margin-left: 10px;
+	padding: 10px;
+}
+#SeccionReservas, #PreciosCategoria{
+	border-radius: 10px;
+	display: inline-block;
+	text-aling: center;
+	color: #F5F5F5;
+	background: linear-gradient(45deg, black, transparent);
+	text-align: center;
+}
+#datos{
+	text-align: center;
+	padding: 10px;
+}
+#tituloForm{
+	text-align: center;
+	padding-bottom: 10px;
+	color: #7b12ae;
+}
+.labels{
+	font-weight: bold;
+}
+#btnreservar{
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	background-color: #7b12ae;
+	color:#FFFFFF;
+	border: none;
+	padding: 0.7rem 1.5rem;
+	margin: 0.6rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+.form-contro2{
+	width:25%;
+	padding:0.5rem;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	border: 1.5px solid #7b12ae;
+	background: linear-gradient(white, transparent);
+}
+#ingreso, #egreso, #menores, #mayores{
+	width: 15%;
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	border: 1.5px solid #7b12ae;
+}
+@media(max-width: 1024px){
+	.logo{
+		padding-left: 40px;
+	}
+	.nav-options li a{
+		font-size: 16px;
+		padding: 7px 10px;
+	}
+	.banner{
+		height: 89vh;
+	}
+	.banner-content img{
+	width: 100%;
+	}
+	.about, .staff, .contacto{
+		height: 100vh;
+	}
+	.img-job{
+		width: 210px;
+		height: 210px;
+	}
+	.staff-card p{
+		font-size: 13px;
+	}
+	.img-perfil{
+		width: 150px;
+		height: 150px;
+	}
+	.form-control{
+		width: 75%;
+		padding: 0.3rem;
+		margin: 0.6rem 1rem;
+	}
+	.send-btn{
+		height: 0.8rempx;
+	}
+	.footer{
+		height: 15vh;
+	}
+	.social{
+		width: 100%;
+	}
+	.social label i{
+		font-size: 25px;
+	}
+	.copr{
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+}
+@media(max-width: 768px){
+	.checkbtn{
+		display:block;
+	}
+	.nav-options{
+		position:fixed;
+		width:100%;
+		height:100vh;
+		background:#69B4C8;
+		top: 50px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	.nav-options li{
+		display: block;
+		border-bottom: 1px solid #F4F0F0;
+		z-index:1;
+	}
+	.nav-options li a{
+		font-size: 18px;
+	}
+	nav li:hover{
+		background: #EEEAEA;
+	}
+	nav li a:hover{
+		color: #2F2E2E;
+	}
+	#check:cheked ~ ul{
+		left:0;
+	}
+	.banner{
+		height: 55vh;
+	}
+	.banner-text h2{
+		font-size:30px;
+	}
+	.banner-text p{
+		font-size: 14px;
+	}
+	.banner-text a{
+		font-size: 14px;
+		width: 60px;
+	}
+	.about, .staff, .contacto{
+		height: 165vh;
+	}
+	.about-content, .staff-content, .contacto-content{
+		font-size: 35px;
+	}
+	.about-img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.staff-card{
+		width: 100%;
+		margin-bottom: 20px;
+
+	}
+	.form-control{
+		width: 75%;
+		padding: 0.3rem;
+		margin: 0.6rem 1rem;
+	}
+	.send-btn{
+		height: 0.8px;
+	}
+	.form-contact, .contacto-img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.form-control{
+		width:85%;
+		padding:0.8rem;
+		margin: 0.6rem 1rem;
+		display: block;
+		font-size: 1rem;
+		outline: 0;
+		border-radius: 5px;
+		border: 1.5px solid #c7c7c7;
+	}
+	.send-btn{
+		width: 77%;
+	}
+	.copr p{
+		font-size: 14px;
+	}
+	.Reserva{
+		text-align: center;
+	}
+	.datosreserva{
+		text-aling: center;
+	}
+}
