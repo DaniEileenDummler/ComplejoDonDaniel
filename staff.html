@@ -9,10 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	  <!-- Enlaza el archivo CSS de Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-	  <!-- Enlaza el archivo JavaScript de Bootstrap (opcional) -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -24,15 +21,15 @@
 			<label for="check" class="checkbtn">
 				<i class="fa-solid fa-bars"></i>
 			</label>
-			<label class="logo">Complejo Don Daniel</label>
 			<ul class="nav-options">
-				<li><a href="index.html">Inicio</a></li>
+				<label class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="img-logo"></a></label>
 				<li><a href="staff.html">Nosotros</a></li>
-				<li><a href="reservas.html">Reservas</a></li>
+				<li onclick="precios()"><a href="reservas.html">Reservas</a></li>
+				<li><a href="venta.html">Instalaciones</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
-
 			</ul>
 		</nav>
+    </header>
 	</header>
 	<section class="staff" id="clientes">
 			<div class="staff-content">
@@ -69,5 +66,6 @@
 		</div>
 	</footer>
 	<script src="https://kit.fontawesome.com/8c8e2d3687.js" crossorigin="anonymous"></script>
+	<script src="js.js"></script>
 </body>
 </html>
