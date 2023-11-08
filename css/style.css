@@ -30,7 +30,6 @@ nav{
 	border-radius:3px;
 }
 .img-logo{
-	position: absolute;
 	height:50px;
 	width: 50px;
 }
@@ -38,6 +37,9 @@ nav{
 	float: right;
 	margin-right:20px;
 	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: space-between;
 }
 .nav-options li{
 	display: inline-block;
@@ -75,8 +77,53 @@ section{
 .banner{
 	height: 97vh;
 	position: relative;
-	background-color: #69B4C8;
+	background: url(../img/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #F5F2F2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}    
+  .contacto-img {
+	flex-basis: 100%;
+	margin-top: 20px;
+  }
+  
+.contacto-img iframe {
+	width: 100%;
+	height: auto;
+	margin: 10px;
+  }
+.banner-text {
+    max-width: 600px;
+    margin: 0 auto;
 }
+.banner-text h2 {
+    font-size: 3rem;
+}
+.banner-text p {
+    font-size: 1.5rem;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-imgx {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+}
+
+.img-job {
+    width: 100%;
+    height: auto;
+}
+/**/  
 .banner-text{
 	position: absolute;
 	color: white;
@@ -86,28 +133,28 @@ section{
 	right: 20px;
 	transform: translateX(0%) translateY(-45%);
 }
-.banner-content img{
-	width: 100%;
-}
+
 .banner-text a{
-	display: block;
 	color:#F5F2F2;
-	width: 100px;
 	text-align: center;
 	text-decoration: none;
-	padding: 7px;
-	margin-top:10px;
 	border: 3px solid #F5F2F2;
+	display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 .banner-text a:hover{
 	background-color: #F5F2F2;
 	color:grey;
 }
-.about{
+.about, .contacto{
 	height: 97vh;
 	position: relative;
 	background-color: #302D2D;
 	color: #F3F2F2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .about-content{
 	width: 100%;
@@ -127,7 +174,9 @@ section{
 	width: 100%;
 	box-sizing: border-box;
 	margin-top: 30px;
-
+	flex: 1;
+ 	max-width: calc(33.33% - 20px);
+  	margin: 10px;
 }
 .about-imgx{
 	width: 33%;
@@ -142,13 +191,24 @@ section{
 	padding-bottom: 15px;
 
 }
+.contacto{
+	height: 97vh;
+	display: block;
+	position: relative;
+	background: url(../img/llamas.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #F5F2F2;
+	background-repeat: no-repeat;
+}
 .staff{
 	height: 97vh;
 	position: relative;
 	background: url(../img/fondocafe.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	color: #F5F2F2;
+	color: rgb(225, 159, 16);
+	background-repeat: no-repeat;
 }
 .staff-content{
 	width: 100%;
@@ -172,15 +232,11 @@ section{
 .info{
 	text-align: center;
 }
-.staff-card{
-	width: 33%;
-	float: left;
-}
 .img-perfil{
 	width: 200px;
 	height:200px;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid rgb(225, 159, 16);
 }
 .contacto{
 	height: 97vh;
@@ -206,10 +262,13 @@ section{
 	box-sizing: border-box;
 	margin-top: 30px;
 	padding: 0px 50px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .form-contact{
 	width: 50%;
 	float: left;
+	flex-basis: 100%;
 }
 .contacto-img{
 	width: 50%;
@@ -325,6 +384,7 @@ footer{
 		max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
+		
 }
 #instalaciones{
 	background-color: #333;
@@ -431,6 +491,12 @@ footer{
 		margin-top: 10px;
 	}
 
+	.about, .contacto{
+		flex-direction: column;
+	  }
+	.about-imgx {
+		max-width: 100%;
+	  }
 }
 @media(max-width: 768px){
 	.checkbtn{
@@ -445,6 +511,7 @@ footer{
 		left:-100%;
 		text-align: center;
 		transition: all .5s;
+		display: inline-block;
 	}
 	.nav-options li{
 		display: block;
@@ -476,6 +543,12 @@ footer{
 		font-size: 14px;
 		width: 60px;
 	}
+	.about, .banner, .contacto{
+		flex-direction: column;
+	  }
+	.about-imgx , .banner-content{
+		max-width: 100%;
+	  }
 	.about, .staff, .contacto{
 		height: 165vh;
 	}
@@ -515,6 +588,8 @@ footer{
 	}
 	.send-btn{
 		width: 77%;
+		height: auto;
+		text-align: center;
 	}
 	.copr p{
 		font-size: 14px;
@@ -524,5 +599,20 @@ footer{
 	}
 	.datosreserva{
 		text-aling: center;
+	}
+}
+
+@media(max-width: 640px){
+	.about, .banner, .contacto{
+		flex-direction: column;
+	  }
+	.about-imgx {
+		max-width: 100%;
+	  }
+	.about, .staff, .contacto{
+		height: 165vh;
+	}
+	.contacto-content{
+		font-size: 18px;
 	}
 }

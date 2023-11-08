@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Primer Pagina Web</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header>
-		<nav class="navbar-menu">
-			<input type="checkbox" id="check">
-			<label for="check" class="checkbtn">
-				<i class="fa-solid fa-bars"></i>
-			</label>
-			<ul class="nav-options">
-				<label class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="img-logo"></a></label>
-				<li><a href="staff.html">Nosotros</a></li>
-				<li><a href="reservas.html">Reservas</a></li>
-				<li><a href="venta.html">Instalaciones</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" class="img-logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link" href="staff.html">Nosotros</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="reservas.html">Reservas</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="venta.html">Instalaciones</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="contacto.html">Contacto</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
     </header>
+	<main>
 	<section class="contacto" id="contactos">
 			<div class="contacto-content">
 				<h2>contacto</h2>
@@ -35,7 +47,7 @@
 				<a href="https://api.whatsapp.com/send/?phone=5491135566689&text&type=phone_number&app_absent=0">+549 1135566689</a> - Dummler, Matías
 				o visitarnos en Cuartel II Pje la gloria, Roque Perez - Buenos Aires, Argentina</p>
 				<div class="contacto-group">
-					<form action="" class="form-contact" name="contact">
+					<form action="" class="form-contact" name='contact'>
 						<div>
 							<input type="text" name= 'name' placeholder="Nombres" class="form-control">
 							<input type="text" name= 'surname' placeholder="Apellidos" class="form-control">
@@ -66,5 +78,6 @@
 	</footer>
 	<script src="https://kit.fontawesome.com/8c8e2d3687.js" crossorigin="anonymous"></script>
 	<script src="js.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
