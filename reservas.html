@@ -42,45 +42,45 @@
 	 <section class="clase1">
 		<div class="container">
 		  <h2 id="tituloForm">Formulario de Reserva</h2>
-		  <form action="servidorFuturo" class="datosreserva">
+		  <form action="" class="datosreserva" name="datosreserva" id="reserva">
 			<div class="form-group">
 			  <label class="labels" for="name">Nombre del titular de la Reserva</label>
-			  <input type="text" id="name" maxlength="60" required="true" placeholder="Nombre y Apellido" class="form-control">
+			  <input type="text" id="name" maxlength="60" required="true" placeholder="Nombre y Apellido" class="form-control" name="name">
 			</div>
 			<div class="form-group">
 			  <label class="labels" for="name">DNI o Pasaporte</label>
-			  <input type="text" id="dni" maxlength="10" required="true" placeholder="Documento" class="form-control">
+			  <input type="text" id="dni" maxlength="10" required="true" placeholder="Documento" class="form-control" name="doc">
 			</div>
 			<div class="form-group">
 			  <label class="labels" for="name">Email</label>
-			  <input type="email" id="email" maxlength="60" required="true" placeholder="Email" class="form-control">
+			  <input type="email" id="email" maxlength="60" required="true" placeholder="Email" class="form-control" name="email">
 			</div>
 			<div class="form-group">
 			  <label class="labels" for="name">Teléfono</label>
-			  <input type="phone" id="phone" maxlength="15" required="true" placeholder="Telefono" class="form-control">
+			  <input type="phone" id="phone" maxlength="15" required="true" placeholder="Telefono" class="form-control" name="phone">
 			</div>
 			<div class="form-group">
 			  <label class="labels">Seleccione el tipo de reserva:</label>
 			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="motorhomes">
 				<label class="form-check-label" for="defaultCheck1">
 				  Motorhomes
 				</label>
 			  </div>
 			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" name="casaR">
 				<label class="form-check-label" for="defaultCheck2">
 				  Casa Rodante
 				</label>
 			  </div>
 			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="dormis">
 				<label class="form-check-label" for="defaultCheck3">
 				  Dormis
 				</label>
 			  </div>
 			  <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="cabanas">
 				<label class="form-check-label" for="defaultCheck4">
 				  Cabañas
 				</label>
@@ -88,7 +88,7 @@
 			</div>
 			<div class="form-group">
 			  <label class="labels" for="mayores">Mayores</label>
-			  <select id="mayores" class="form-control">
+			  <select id="mayores" class="form-control" name="may">
 				<option value="1" label="1"></option>
 				<option value="2" label="2"></option>
 				<option value="3" label="3"></option>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="form-group">
 			  <label class="labels" for="menores">Menores</label>
-			  <select id="menores" class="form-control">
+			  <select id="menores" class="form-control" name="men">
 				<option value="1" label="1"></option>
 				<option value="2" label="2"></option>
 				<option value="3" label="3"></option>
@@ -108,13 +108,13 @@
 			</div>
 			<div class="form-group">
 			  <label class="labels" for="ingreso">Fecha de ingreso</label>
-			  <input type="date" name="" id="ingreso" class="form-control">
+			  <input type="date" name="" id="ingreso" class="form-control" name="iDate">
 			</div>
 			<div class="form-group">
 			  <label class="labels" for="egreso">Fecha de egreso</label>
-			  <input type="date" name="" id="egreso" class="form-control">
+			  <input type="date" name="" id="egreso" class="form-control" name="eDate">
 			</div>
-			<button type="submit" class="btn btn-primary">Reservar</button>
+			<button type="submit" class="btn btn-primary" name="reservar">Reservar</button>
 		  </form>
 		</div>
 	  </section>
